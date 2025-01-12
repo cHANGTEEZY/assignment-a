@@ -1,0 +1,98 @@
+:root {
+  --main-background-color: linear-gradient(120deg, #e0967c, #db4f61, #8d3f9d);
+  --card-items-background-color: rgb(212, 113, 127);
+  --card-items-border-radius: 1.3rem;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: var(--main-background-color);
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 1rem;
+  width: 400px;
+  height: 400px;
+  border-left: 3px solid rgba(255, 255, 255, 0.4);
+  border-top: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--card-items-border-radius);
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  position: absolute;
+}
+
+.card.prev {
+  z-index: 1;
+  transform: scale(0.8) translateY(-360px);
+}
+
+.card.active {
+  transform: scale(1) translateY(0);
+  z-index: 3;
+}
+
+.card.next {
+  z-index: 2;
+  transform: scale(0.8) translateY(420px);
+}
+
+.border-shadow {
+  box-shadow: inset 5px 5px 30px rgba(255, 255, 255, 0.6);
+}
+
+.big-box {
+  width: 100%;
+  background-color: white;
+  height: 45%;
+  border-radius: var(--card-items-border-radius);
+  background-color: var(--card-items-background-color);
+}
+
+/* wanted to use flex but forsome reason flex 
+was not showing the element so used grid  */
+.flex-group {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 15% 80%;
+  gap: 5%;
+}
+
+.circle {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: var(--card-items-background-color);
+}
+
+.grid-group {
+  display: grid;
+  gap: 15px;
+}
+
+.long-line {
+  width: 100%;
+  height: 35px;
+  background-color: var(--card-items-background-color);
+  border-radius: var(--card-items-border-radius);
+}
+
+.short-line {
+  width: 50%;
+  height: 20px;
+  border-radius: var(--card-items-border-radius);
+  background-color: var(--card-items-background-color);
+}
