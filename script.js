@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let differenceInPosition = startYposition - lastYposition; //and we find the difference between when mouse clicked and mouse released
     console.log(differenceInPosition);
 
-    if (Math.abs(differenceInPosition) > 100) {
+    if (Math.abs(differenceInPosition) > 30) {
       //ensuring that this threshold needs to be moved for drag to be registeresd
       if (differenceInPosition > 0) {
         //if the difference is positive we have dragged upward
