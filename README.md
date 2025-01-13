@@ -1,5 +1,5 @@
 # DEPLOYED PROJECT LINK 
-https://kanban-board-e8srodpuh-changteezys-projects.vercel.app/
+https://vrit-assignment.netlify.app/
 
 # SETUP INSTRUCTIONS
 
